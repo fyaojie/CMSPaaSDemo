@@ -1,0 +1,6 @@
+framework module Pods_CMSPaaSDemo_Tests {
+  umbrella header "Pods-CMSPaaSDemo_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

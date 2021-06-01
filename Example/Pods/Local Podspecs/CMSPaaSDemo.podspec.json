@@ -1,0 +1,22 @@
+{
+  "name": "CMSPaaSDemo",
+  "version": "0.1.0",
+  "summary": "A short description of CMSPaaSDemo.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/562925462@qq.com/CMSPaaSDemo",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "562925462@qq.com": "yaojie.feng@symbio.com"
+  },
+  "source": {
+    "git": "https://github.com/562925462@qq.com/CMSPaaSDemo.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "CMSPaaSDemo/Classes/**/*"
+}

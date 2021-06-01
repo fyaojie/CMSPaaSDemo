@@ -38,8 +38,8 @@
 
 /* Begin PBXFileReference section */
 		2CD220071134AABA41A09980 /* Pods-CMSPaaSDemo_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CMSPaaSDemo_Tests.debug.xcconfig"; path = "Target Support Files/Pods-CMSPaaSDemo_Tests/Pods-CMSPaaSDemo_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		2CF8E74701D95CB7BC94016D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		335747A1645E0F9B3B8BF167 /* CMSPaaSDemo.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = CMSPaaSDemo.podspec; path = ../CMSPaaSDemo.podspec; sourceTree = "<group>"; };
+		2CF8E74701D95CB7BC94016D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		335747A1645E0F9B3B8BF167 /* CMSPaaSDemo.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CMSPaaSDemo.podspec; path = ../CMSPaaSDemo.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6003F58A195388D20070C39A /* CMSPaaSDemo_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CMSPaaSDemo_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -62,7 +62,7 @@
 		62225EBA781910ED5BFBDA9C /* Pods_CMSPaaSDemo_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CMSPaaSDemo_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76D60C2D6E22040484602FB5 /* Pods-CMSPaaSDemo_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CMSPaaSDemo_Example.release.xcconfig"; path = "Target Support Files/Pods-CMSPaaSDemo_Example/Pods-CMSPaaSDemo_Example.release.xcconfig"; sourceTree = "<group>"; };
-		86857AE1CFB23EF27B46904F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		86857AE1CFB23EF27B46904F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9EA13EB78B313AC55AA416EE /* Pods-CMSPaaSDemo_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CMSPaaSDemo_Tests.release.xcconfig"; path = "Target Support Files/Pods-CMSPaaSDemo_Tests/Pods-CMSPaaSDemo_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		AD0511C69C22B5C5FFB1770D /* Pods_CMSPaaSDemo_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CMSPaaSDemo_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -193,7 +193,6 @@
 				2CD220071134AABA41A09980 /* Pods-CMSPaaSDemo_Tests.debug.xcconfig */,
 				9EA13EB78B313AC55AA416EE /* Pods-CMSPaaSDemo_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
