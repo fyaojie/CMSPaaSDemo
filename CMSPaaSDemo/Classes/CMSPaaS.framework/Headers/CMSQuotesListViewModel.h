@@ -30,6 +30,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSArray <NSString *> *propertys;
 @property (nonatomic, strong) NSArray<id<CMSStockProtocol>> *showStockCellModels;
 
+@property (nonatomic, strong) CMSQuotesListSubBaseViewModel *currentDetailTypeViewModel;
 
 /// 分页数量
 @property (nonatomic, assign) NSInteger pageCount;

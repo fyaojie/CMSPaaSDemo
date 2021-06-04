@@ -7,7 +7,6 @@
 
 #import <Foundation/Foundation.h>
 #import "UIColor+CMSFactory.h"
-#import "CMSColorKey.h"
 #import "CMSImageKey.h"
 #import "UIView+CMSThemeView.h"
 

@@ -29,6 +29,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSIndexPath *indexPath;
 @property (nonatomic, strong) NSDictionary *style;
 @property (nonatomic, strong) CMSQuotesCellViewModel *viewModel;
+
+//@property (nonatomic, strong) UIView *line;
+
+
 /// 空的初始化方法
 - (void)setInitViewUI;
 /// 需要调用 添加 sectionTitleView
@@ -41,6 +45,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)openURI:(NSString *)uri;
 /// template 协议方法
 - (void)CMSComponentCellConfigWithStyle:(NSDictionary *)style data:(CMSQuotesCellViewModel *)data;
+
+- (void)setBottomMarginWithView:(UIView *)view margin:(CGFloat)margin;
 @end
 
 NS_ASSUME_NONNULL_END

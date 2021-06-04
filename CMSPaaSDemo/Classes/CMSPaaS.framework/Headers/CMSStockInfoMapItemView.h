@@ -27,7 +27,7 @@ typedef enum {
 @end
 
 @interface CMSStockInfoMapItem : NSObject<CMSStockProtocol>
-@property (nonatomic, strong) NSArray<NSNumber *> *pos;
+@property (nonatomic, strong) CMSStockInfoMapItemPointModel *pos;
 @property (nonatomic, strong) CMSStockInfoMapItemPointModel *landscapePos;
 
 @property (nonatomic, copy) NSString *stockIndex;

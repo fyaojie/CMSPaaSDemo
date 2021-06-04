@@ -9,7 +9,6 @@
 #import "CMSQuoteStockCollectionView.h"
 
 typedef NS_ENUM(NSInteger, CMSQuoteStockDataCollecionViewType) {
-    CMSQuoteStockDataCollecionViewTypeQuote        = 0,  // 行情样式
     CMSQuoteStockDataCollecionViewTypeSelfSelected,       // 自选样式
     CMSQuoteStockDataCollecionViewTypeQuoteIndex         // 行情指数样式
 };
@@ -21,6 +20,7 @@ typedef UICollectionReusableView *(^CMSQuoteStockDataCollectionReusableViewBlock
 @property (nonatomic,strong) NSArray <id<CMSStockProtocol>> *stocks;
 /// 默认type:行情
 @property (nonatomic, assign) CMSQuoteStockDataCollecionViewType type;
+@property (nonatomic, assign) CGFloat itemWidth;
 @property (nonatomic, copy)     void(^scrollViewDidScrollBlock)(UIScrollView *scrollView);
 @property (nonatomic, copy)     CMSQuoteStockDataCollectionReusableViewBlock   configReusableFooterView;
 @property (nonatomic, copy)     CMSQuoteStockDataCollectionReusableViewBlock   configReusableHeaderView;

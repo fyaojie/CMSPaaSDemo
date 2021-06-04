@@ -96,7 +96,6 @@
 #import "CMSMultiSelectActionSheetItem.h"
 #import "CMSPopController.h"
 #import "CMSTableViewOC.h"
-#import "CMSColorKey.h"
 #import "CMSImageKey.h"
 #import "CMSThemeManager.h"
 #import "CMSDeallocBlockExecutor.h"

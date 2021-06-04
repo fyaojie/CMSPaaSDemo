@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CMSMarketColorUtils : NSObject
 
-+ (UIColor *)colorOfText:(NSString *)text;
++ (NSString *)colorOfText:(NSString *)text;
 
 @end
 

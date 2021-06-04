@@ -29,4 +29,12 @@
 /// url解析获取其中的参数
 - (NSDictionary *)cms_urlParsing;
 
+/**
+ *  驼峰转下划线（loveYou -> love_you）
+ */
+- (NSString *)cms_underlineFromCamel;
+/**
+ *  下划线转驼峰（love_you -> loveYou）
+ */
+- (NSString *)cms_camelFromUnderline;
 @end
