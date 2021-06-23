@@ -17,6 +17,8 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param complated 选择的板块名称回调
 + (void)alertWithTitleArray:(NSArray<NSString *> *)titleArray SelectTitle:(NSString *)selectTitle complated:(void (^)(NSString *selectTitle))complated;
 
++ (void)alertWithTitleArray:(NSArray<NSString *> *)titleArray SelectTitle:(NSString *)selectTitle complated:(void (^)(NSString *selectTitle))complated closeBlock:(void (^)(void))closeBlock;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -7,12 +7,16 @@
 //
 
 #import "CMSAppDelegate.h"
-
+#import <CMSPaaS/CMSStock.h>
+//#import <CMSPaaS/CMSStock.h>
+#import <CMSPaaS/CMSPaaS-Swift.h>
 @implementation CMSAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    NSLog(@"%@", [CMSStock new]);
+    NSLog(@"%@", [CMSMarqueeTextView new]);
     return YES;
 }
 

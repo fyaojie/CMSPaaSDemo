@@ -18,6 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface CMSAdaptWidthButtonCollectionViewCell : UICollectionViewCell
 
 @property (nonatomic, strong) UILabel *title;
+@property (nonatomic, assign) CGFloat  backCornerRadius;
 + (CGFloat)widthForCell:(NSString *)text byFont:(UIFont*)font;
 @end
 

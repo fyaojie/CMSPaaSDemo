@@ -40,6 +40,9 @@ typedef enum {
 
 @interface CMSStockInfoMapItemView : UIControl
 @property (nonatomic, strong) CMSStockInfoMapItem *item;
+
+- (void)updateItemViewLayout:(BOOL)isLandscape;
+
 @end
 
 NS_ASSUME_NONNULL_END

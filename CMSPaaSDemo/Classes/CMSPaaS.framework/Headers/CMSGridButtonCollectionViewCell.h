@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 @interface CMSGridButtonCollectionViewCell : UICollectionViewCell
 @property (nonatomic, strong) UILabel *title;
-
+@property (nonatomic, assign) CGFloat layerCornerRadius;
 
 @end
 

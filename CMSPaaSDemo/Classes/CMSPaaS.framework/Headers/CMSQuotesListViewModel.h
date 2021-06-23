@@ -43,15 +43,7 @@ NS_ASSUME_NONNULL_BEGIN
 // 股票列表缓存数据
 @property (nonatomic, strong) NSMutableDictionary<NSString *, NSArray<id<CMSStockProtocol>> *> *stockCellModelsCache;
 @property (nonatomic, strong) NSMutableDictionary<NSString *, NSNumber *> *stockCellTotalNumCache;
-@property (nonatomic, copy) NSString *cellClassName;
-// 加载股票列表 第一个选项的默认数据
-//- (void)loadStockQuotesListDefultData;
-// 根据 uri 读取股票列表详情配置
-- (void)loadQuotesListDetailJsonConfigWithUriModel:(CMSQuotesListDetailUriModel *)uriModel callBack:(void(^)(NSArray<CMSQuotesListDetailModel *> *data))callBack;
 
-// 根据 jsonPath 读取股票列表详情表头配置
-- (void)loadDetailHeadersJson:(id)headers withAllHeader:(NSString *)allHeader CallBack:(void(^)(NSArray<CMSStockHeaderModel *> *datas))callBack;
-- (void)loadQuotesListDetailWithDataKey:(NSString *)dataKey;
 // 通过headerKey查找要显示的表头
 - (void)loadQuotesListDetailHeaderJsonConfigWithHeaderKey:(NSString *)headerKey callBack:(void(^)(NSArray<CMSStockHeaderModel *> *datas))callBack;
 

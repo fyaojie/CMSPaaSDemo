@@ -3,8 +3,8 @@ use_frameworks!
 platform :ios, '9.0'
 
 target 'CMSPaaSDemo_Example' do
+#  pod 'CMSPaaS', '~> 0.0.4'#, :path => '../'
   pod 'CMSPaaS', :path => '../'
-
   target 'CMSPaaSDemo_Tests' do
     inherit! :search_paths
     

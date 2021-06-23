@@ -16,8 +16,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)setThemeBackgroundColor:(NSString *)key;
 - (void)setIndicatorViewBackgroundColor:(NSString *)key;
 - (void)setLineBackgroundColor:(NSString *)key;
-- (void)configDefaultTheme;
-- (void)setItems:(NSArray<CMSSegmentButtonItem *> *)items;
 @end
 
 @interface CMSSegmentButton (CMSTheme)

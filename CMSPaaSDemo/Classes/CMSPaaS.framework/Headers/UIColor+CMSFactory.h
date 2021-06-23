@@ -9,33 +9,21 @@
 #import <UIKit/UIKit.h>
 
 
-#define COLOR(r,g,b)                                ([UIColor colorWithRed:(r/255.0) green:(g/255.0) blue:(b/255.0) alpha:1])
-#define COLORA(r,g,b,a)                             ([UIColor colorWithRed:(r/255.0) green:(g/255.0) blue:(b/255.0) alpha:a])
+#define COLOR(r, g, b)                                COLORA(r, g, b, 1)
+#define COLORA(r, g, b, a)                             ([UIColor colorWithRed:(r/255.0) green:(g/255.0) blue:(b/255.0) alpha:a])
 
-#define HEXCOLOR(hexValue)              [UIColor colorWithRed : ((CGFloat)((hexValue & 0xFF0000) >> 16)) / 255.0 green : ((CGFloat)((hexValue & 0xFF00) >> 8)) / 255.0 blue : ((CGFloat)(hexValue & 0xFF)) / 255.0 alpha : 1.0]
+#define HEXCOLOR(hexValue)              HEXACOLOR(hexValue, 1.0)
 #define HEXACOLOR(hexValue, alphaValue) [UIColor colorWithRed : ((CGFloat)((hexValue & 0xFF0000) >> 16)) / 255.0 green : ((CGFloat)((hexValue & 0xFF00) >> 8)) / 255.0 blue : ((CGFloat)(hexValue & 0xFF)) / 255.0 alpha : (alphaValue)]
 
 
 @interface UIColor(CMSFactory)
 
++ (UIColor *)cms_randomColor;
 + (UIColor *)cms_colorFromHexString:(NSString *)hexString;
-
 + (UIColor *)cms_colorFromHexString:(NSString *)hexString alpha:(CGFloat)alpha;
 
-+ (UIColor *)cms_mixColor1:(UIColor*)color1 color2:(UIColor *)color2 ratio:(CGFloat)ratio;
-
-//+ (UIColor *)cms_mainTextColor;
-//+ (UIColor *)cms_secondTextColor;
-//+ (UIColor *)cms_detailTextColor;
-//+ (UIColor *)cms_mainButtonBackgroundColor;
-+ (UIColor *)cms_stockIndexUpColor;
-+ (UIColor *)cms_stockUpColor;
-+ (UIColor *)cms_stockDownColor;
-//+ (UIColor *)cms_linkTextColor;
-//+ (UIColor *)cms_separateLineColor;
-//+ (UIColor *)cms_backgroundColor;
-
-+ (UIColor *)cms_colorFromColorKey:(NSString *)keyPath;
+/// 透明
++ (NSString *)cms_systemClear;
 
 #pragma mark  - 主题颜色
 /// 主功能色
@@ -44,8 +32,8 @@
 + (NSString *)cms_linkText;
 /// 跌绿
 + (NSString *)cms_stockDown;
-/// 中性蓝
-+ (NSString *)cms_midBlue;
+///// 中性蓝
+//+ (NSString *)cms_midBlue;
 /// 背景色
 + (NSString *)cms_background;
 #pragma mark  - 辅助颜色
@@ -55,6 +43,9 @@
 + (NSString *)cms_splitBlock;
 /// 金色通知条
 + (NSString *)cms_goldenNote;
+/// 输入框边框
++ (NSString *)cms_inputBorder;
+
 #pragma mark  - Toast颜色
 /// 背景色
 + (NSString *)cms_toastBackground;
@@ -71,24 +62,29 @@
 + (NSString *)cms_tagGray;
 /// 浅灰/深灰
 + (NSString *)cms_tagLightGray;
-/// 白色
+/// 标签文字
 + (NSString *)cms_tagWhite;
 
 #pragma mark  - 按钮颜色
 /// 主按钮可点击
 + (NSString *)cms_mainButtonEnable;
 /// 主按钮不可点击
-+ (NSString *)cms_mainButtonDisenable;
++ (NSString *)cms_mainButtonDisable;
 
 /// 次按钮可点击
 + (NSString *)cms_secondButtonEnable;
 /// 次按钮不可点击
-+ (NSString *)cms_secondButtonDisenable;
++ (NSString *)cms_secondButtonDisable;
 
 /// 金色按钮可点击
 + (NSString *)cms_goldenButtonEnable;
 /// 金色按钮不可点击
-+ (NSString *)cms_goldenButtonDisenable;
++ (NSString *)cms_goldenButtonDisable;
+
+/// 蓝色按钮可点击
++ (NSString *)cms_blueButtonEnable;
+/// 蓝色按钮不可点击
++ (NSString *)cms_blueButtonDisable;
 #pragma mark  - Tab颜色
 
 /// Tab选中
@@ -106,7 +102,7 @@
 + (NSString *)cms_secondText;
 /// 辅助说明文字
 + (NSString *)cms_supplementText;
-/// 棕色文字
+/// 棕色文字  ???
 + (NSString *)cms_brownText;
 
 #pragma mark  - 涨跌背景色
@@ -117,11 +113,6 @@
 + (NSString *)cms_indexBlockDown;
 /// 指数板块持平颜色
 + (NSString *)cms_indexBlockFlat;
-
-+ (UIColor *)cms_randomColor;
-
-/// 透明
-+ (NSString *)cms_systemClear;
 
 /// 股票列表分隔阴影
 + (NSString *)cms_stockListShadow;
@@ -141,8 +132,8 @@
 + (NSString *)cms_lightGoldenBlock;
 
 /// 行情地图背景
-+ (NSString *)mapBackground;
++ (NSString *)cms_mapBackground;
 
 /// 行情地图背景边框
-+ (NSString *)mapBackgroundBorder;
++ (NSString *)cms_mapBackgroundBorder;
 @end

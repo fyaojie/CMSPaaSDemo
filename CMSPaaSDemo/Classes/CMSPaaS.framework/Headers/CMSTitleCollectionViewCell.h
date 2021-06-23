@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface CMSTitleCollectionViewCell : UICollectionViewCell
-@property (nonatomic, strong) UILabel *titleLabel;
+//@property (nonatomic, strong) UILabel *titleLabel;
 
 @property (nonatomic, strong) id<CMSStockProtocol> model;
 

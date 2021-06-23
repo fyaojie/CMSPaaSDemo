@@ -21,6 +21,8 @@ typedef NS_ENUM(NSUInteger, CMSBtnType) {
 
 @property (nonatomic, strong) void(^btnTapCallBack)(NSInteger tag);
 
+- (void)changeSelected:(BOOL)selected;
+
 @end
 
 NS_ASSUME_NONNULL_END

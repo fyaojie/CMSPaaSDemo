@@ -15,10 +15,7 @@ typedef void(^CMSTextTipsViewClickedBlock)(void);
 @property (nonatomic ,strong) UIButton  *rightBtn;
 @property (nonatomic, copy) CMSTextTipsViewClickedBlock clickedBlock;
 
-- (instancetype)initWithFrame:(CGRect)frame title:(NSString *)title rightBtnText:(NSString *)btnText clickedBlock:(CMSTextTipsViewClickedBlock)clickedBlock;
-
-- (void)setTitle:(NSString *)title rightBtnText:(NSString *)btnText;
-
+- (void)setRightButtonTitle:(NSString *)title;
 @end
 
 

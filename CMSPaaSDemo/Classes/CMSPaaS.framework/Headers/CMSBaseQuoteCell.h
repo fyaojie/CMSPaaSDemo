@@ -39,14 +39,16 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)setHeaderViewUI;
 - (void)cellWillDisplay;
 - (void)cellDidEndDisplay;
+/// 设置标题顶部的数据,默认是直接设置的,如无需设置,重新该方法为空实现
+- (void)setSectionTitleViewData;
 /// reload cell
 - (void)tableviewReloadCell;
+/// 点击更多的按钮处理
+- (void)clickMoreButton;
 /// servers openuri
 - (void)openURI:(NSString *)uri;
 /// template 协议方法
 - (void)CMSComponentCellConfigWithStyle:(NSDictionary *)style data:(CMSQuotesCellViewModel *)data;
-
-- (void)setBottomMarginWithView:(UIView *)view margin:(CGFloat)margin;
 @end
 
 NS_ASSUME_NONNULL_END

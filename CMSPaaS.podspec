@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CMSPaaS'
-  s.version          = '0.0.4'
+  s.version          = '0.0.5'
   s.summary          = 'CMSPaaS 项目'
 
 # This description is used to generate tags and improve search results.
@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'CMSPaaSDemo/Classes/**/*'
+  s.source_files = 'CMSPaaSDemo/Classes/**/*.{h}'
   
   # s.resource_bundles = {
   #   'CMSPaaSDemo' => ['CMSPaaSDemo/Assets/*.png']
@@ -41,7 +41,7 @@ Pod::Spec.new do |s|
   # s.dependency 'AFNetworking', '~> 2.3'
   
   s.vendored_frameworks = ['CMSPaaSDemo/Classes/CMSPaaS.framework']
-  s.frameworks = 'Foundation', 'CoreFoundation', 'UIKit'  # 依赖的 frameworks
+  # s.frameworks = 'Foundation', 'CoreFoundation', 'UIKit'  # 依赖的 frameworks
   s.dependency 'YYCache', '1.0.3'
   s.dependency 'YYModel'
   s.dependency 'KVOController'
@@ -50,7 +50,6 @@ Pod::Spec.new do |s|
   s.dependency 'MJRefresh', '3.5.0'
   s.dependency 'SDWebImage/GIF', '4.4.3'
   s.dependency 'UITableView+FDTemplateLayoutCell', '1.6'
-  s.dependency 'AFNetworking'
   s.dependency 'IQKeyboardManager'
   s.dependency 'SVProgressHUD'
   

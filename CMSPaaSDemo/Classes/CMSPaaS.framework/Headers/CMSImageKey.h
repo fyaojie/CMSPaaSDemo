@@ -67,7 +67,7 @@ static NSString *selfStock_dragIconKey = @"selfStock_drag_icon";
 /// 智能下单
 static NSString *smartOrderTextFieldPlusIconKey = @"smartOrder_textField_plus_icon";
 static NSString *smartOrderTextFieldMinusIconKey = @"smartOrder_textField_minus_icon";
-static NSString *smartOrderArrowBottomKey = @"smartOrder_arrow_bottom";
+static NSString *smartOrderArrowBottomKey = @"smartOrder_arrow_bottom_icon";
 static NSString *smartOrderSearchIconKey = @"smartOrder_search_icon";
 static NSString *smartOrderPriceFallIconKey = @"smartOrder_price_fall_icon";
 static NSString *smartOrderPriceRaiseIconKey = @"smartOrder_price_raise_icon";

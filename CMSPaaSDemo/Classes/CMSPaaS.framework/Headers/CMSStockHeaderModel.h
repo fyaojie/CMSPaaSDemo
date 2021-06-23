@@ -18,8 +18,17 @@
 
 @interface CMSStockHeaderModel : NSObject
 
+/**
+ 在需要展示子标题背景的地方添加subPropertyStyle（如：3天1板）:
+ "subPropertyStyle": {
+     "background": "positive",
+     "foreground": "positive"
+ }
+*/
 @property (nonatomic, strong) CMSStockHeaderPropertyModel *propertyModel;
+@property (nonatomic, copy) NSString *sortProperty;
 @property (nonatomic, copy) NSString *subProperty;
+@property (nonatomic, copy) NSDictionary *subPropertyStyle;
 @property (nonatomic, copy) NSString *property;
 @property (nonatomic, assign) BOOL show;
 @property (nonatomic, assign) BOOL noSort;   //配置文件设置了该属性为true则该property不显示排序

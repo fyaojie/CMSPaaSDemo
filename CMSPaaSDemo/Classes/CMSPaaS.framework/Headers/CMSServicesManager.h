@@ -25,8 +25,6 @@
 
 /// 股票跳转至详情
 - (void)openStock:(id<CMSStockProtocol> _Nullable)stock stocks:(NSArray<id<CMSStockProtocol>> * _Nullable)stocks;
-/// 龙虎榜跳转至详情
-- (void)openDragonTigerChart:(id<CMSStockProtocol>_Nullable)dragonTigerChart dragonTigerCharts:(NSArray<id<CMSStockProtocol>> * _Nullable)dragonTigerCharts;
 /// 跳转到资金持仓
 - (void)openCapitalPosition;
 

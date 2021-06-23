@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)cms_setValue:(nullable id)value forKey:(NSString *)key;
 
 - (nullable id)cms_valueForKey:(NSString *)key;
-
+- (void)cms_performOnMainThread:(void(^)(void))block;
 @end
 
 NS_ASSUME_NONNULL_END

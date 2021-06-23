@@ -27,7 +27,7 @@
 @property (nonatomic, strong) void(^didSelectItemBlock)(CMSSegmentHeaderView *headerView, NSInteger index);
 @property (nonatomic, strong) void(^didChangeItemBlock)(CMSSegmentHeaderView *headerView);
 @property (nonatomic, strong) void(^didClearBadgeBlock)(CMSSegmentHeaderView *headerView, NSInteger index);
-@property (nonatomic, strong) UIView *line;
+
 @property (nonatomic, weak) id<CMSSegmentHeaderViewDelegate> delegate;
 
 /**
@@ -87,6 +87,8 @@
  *  item间的间隔
  */
 @property (nonatomic, assign) CGFloat itemSpacing;
+/// 左右边距
+@property (nonatomic, assign) CGFloat margin;
 
 /**
  *  底部线
@@ -99,8 +101,6 @@
  *  设置indicator的位置，positon代表index的小数形式，如1.3表示1和2中间的0.3的位置
  */
 - (void)setIndicatorPosition:(CGFloat)position;
-
-- (void)resetIndicatorViewFrame;
 
 @end
 

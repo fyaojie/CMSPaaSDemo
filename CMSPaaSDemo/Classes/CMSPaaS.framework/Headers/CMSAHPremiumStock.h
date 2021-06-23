@@ -23,7 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSNumber *HChangeRate; // H股幅度
 @property (nonatomic, strong) NSNumber *premium; // 溢价(H/A)
 @property (nonatomic, strong) NSNumber *premiumRate; // 溢价率
-
+@property (nonatomic, strong) NSNumber *decimalDigits; // 小数位数
 
 @end
 

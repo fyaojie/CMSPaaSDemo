@@ -57,6 +57,7 @@ stretchableImageWithLeftCapWidth:(CGFloat)leftCapWidth
 - (void)cms_themeSetImage:(NSString *)path forState:(UIControlState)state;
 - (void)cms_themeSetImage:(NSString *)path forState:(UIControlState)state renderingMode:(UIImageRenderingMode)mode;
 - (void)cms_themeSetBackgroundImage:(NSString *)path forState:(UIControlState)state;
+- (void)cms_themeSetBackgroundColor:(NSString *)path forState:(UIControlState)state;
 - (void)cms_themeSetTitleColor:(NSString *)path forState:(UIControlState)state;
 
 @end

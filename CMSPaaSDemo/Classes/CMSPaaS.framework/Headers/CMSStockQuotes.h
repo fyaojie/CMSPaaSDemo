@@ -72,6 +72,9 @@
 @property (nonatomic, strong) NSNumber *capitalDays; // 逆回购占款天数
 @property (nonatomic, strong) NSNumber *convertiblePremium; // 可转债的转股溢价率
 @property (nonatomic, strong) NSNumber *decimalDigits; // 小数位数
+@property (nonatomic, copy) NSString *riseLimitInfo; // 连板信息
+@property (nonatomic, strong) NSNumber *riseLimitStatus1; // 涨停信息1，用来换算连板信息
+@property (nonatomic, strong) NSNumber *riseLimitStatus2; // 涨停信息2，用来换算连板信息
 
 @end
 

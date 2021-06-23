@@ -48,11 +48,13 @@ NS_ASSUME_NONNULL_BEGIN
                                sort:(CMSSelfSelectStockSortInfo * _Nullable)sort
                          startIndex:(NSInteger)startIndex
                               count:(NSInteger)count
-                           callback:(void (^_Nullable)(NSArray<CMSStockBlockModel *> * _Nonnull datas, int64_t totalNumber))callback;
+                           callback:(void (^_Nullable)(NSArray<CMSStockBlockModel *> * _Nonnull datas, NSUInteger totalNumber))callback;
 
 ///AH股溢价榜接口
 - (void)getAHStockListWithStartIndex:(NSInteger)startIndex
                                count:(NSInteger)count
+                        sortProperty:(nullable NSString *)sortProperty
+                             ordered:(NSComparisonResult)ordered
                           properties:(NSArray<NSString *> *)properties
                             callback:(void(^_Nullable)(NSArray * _Nonnull data, int64_t totalNumber))callback;
 

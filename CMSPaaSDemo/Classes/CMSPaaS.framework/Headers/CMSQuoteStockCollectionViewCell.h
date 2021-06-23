@@ -28,6 +28,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, nullable, copy) NSString *textColorKey;
 /// 默认的字体大小满足大多业务需求, 仅仅在涨幅涨速时候需要设置
 @property (nonatomic, nullable, strong) UIFont *font;
+@property (nonatomic, nullable, strong) NSNumber *height;
 /// 是否加粗,内部已经处理, 非特殊情况, 不需要使用该字段
 //@property (nonatomic, nullable, strong) NSNumber *isBold;
 @end
@@ -44,6 +45,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSArray<CMSQuoteStockCollectionViewSubItemModel *> *firstRows;
 @property (nonatomic, copy) NSArray<CMSQuoteStockCollectionViewSubItemModel *> *secondRows;
 @property (nonatomic, nullable, strong) NSNumber *titleTopPadding;
+@property (nonatomic, nullable, strong) NSNumber *titleHeight;
 @property (nonatomic, nullable, strong) NSNumber *firstRowTopPadding;
 @property (nonatomic, nullable, strong) NSNumber *secondRowTopPadding;
 @property (nonatomic,nullable, strong) CMSStockQuotesBinder *stockQuotesBinder;

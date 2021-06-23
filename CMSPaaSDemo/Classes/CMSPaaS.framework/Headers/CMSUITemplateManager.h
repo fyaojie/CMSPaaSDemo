@@ -47,9 +47,9 @@
  */
 - (void)cellWithTemplate:(NSDictionary *)templateInfo data:(id)data  tableViewCell:(UITableViewCell<CMSComponentCellConfig> *)cell;
 
-- (void)cellWillDisplayWithTemplateData:(NSDictionary *)templateData tableViewCell:(UITableViewCell<CMSComponentCellConfig> *)cell;
+//- (void)cellWillDisplayWithTemplateData:(NSDictionary *)templateData tableViewCell:(UITableViewCell<CMSComponentCellConfig> *)cell;
 
-- (void)cellWithDidEndDisplayingTemplateData:(NSDictionary *)templateData tableViewCell:(UITableViewCell<CMSComponentCellConfig> *)cell;
+//- (void)cellWithDidEndDisplayingTemplateData:(NSDictionary *)templateData tableViewCell:(UITableViewCell<CMSComponentCellConfig> *)cell;
 
 //- (UITableViewCell *)tableViewcellWithTemplateNameData:(NSDictionary *)templateData constraintWidth:(CGFloat)constraintWidth tableView:(UITableView *)tableView cellClassName:(NSString *)cellClassName;
 
