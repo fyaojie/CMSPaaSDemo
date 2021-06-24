@@ -30,17 +30,17 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'CMSPaaSDemo/Classes/**/*.{h}'
-  
+  # s.source_files = 'CMSPaaSDemo/Classes/**/*.{h}'
+  s.source_files = 'CMSPaaSDemo/Classes/CMSPaaS.framework/*'
   # s.resource_bundles = {
   #   'CMSPaaSDemo' => ['CMSPaaSDemo/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+  # s.public_header_files = 'CMSPaaSDemo/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
   
-  s.vendored_frameworks = ['CMSPaaSDemo/Classes/CMSPaaS.framework']
+  s.vendored_frameworks = 'CMSPaaSDemo/Classes/CMSPaaS.framework'
   # s.frameworks = 'Foundation', 'CoreFoundation', 'UIKit'  # 依赖的 frameworks
   s.dependency 'YYCache', '1.0.3'
   s.dependency 'YYModel'

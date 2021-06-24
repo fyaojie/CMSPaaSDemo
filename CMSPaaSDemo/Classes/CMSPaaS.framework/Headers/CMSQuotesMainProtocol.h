@@ -56,7 +56,7 @@ NS_ASSUME_NONNULL_BEGIN
                         sortProperty:(nullable NSString *)sortProperty
                              ordered:(NSComparisonResult)ordered
                           properties:(NSArray<NSString *> *)properties
-                            callback:(void(^_Nullable)(NSArray * _Nonnull data, int64_t totalNumber))callback;
+                            callback:(void(^_Nullable)(NSArray * _Nonnull data))callback;
 
 /** 请求 股票列表 数据
  *@param setDomain 细分市场的常量

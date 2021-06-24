@@ -19,7 +19,7 @@
 @interface CMSStockHeaderModel : NSObject
 
 /**
- 在需要展示子标题背景的地方添加subPropertyStyle（如：3天1板）:
+ 在需要展示子标题背景的地方添加subPropertyStyle（如：几天几板,3天1板）:
  "subPropertyStyle": {
      "background": "positive",
      "foreground": "positive"
